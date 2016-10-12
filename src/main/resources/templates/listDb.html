@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Developers database</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Developers</h1>
+<table>
+    <tr th:each="customer : ${customerList}">
+        <td th:text="${customer}"></td>
+    </tr>
+</table>
+</body>
+</html>
